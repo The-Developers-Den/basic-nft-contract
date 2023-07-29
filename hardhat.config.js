@@ -10,14 +10,9 @@ const POLYGON_SCAN_KEY = process.env.POLYGON_SCAN_KEY;
 module.exports = {
   solidity: "0.8.19",
   networks: {
-    mumbai: {
+    sepolia: {
       url: ALCHEMY_HTTP_URL,
       accounts: [PRIVATE_KEY],
-    },
-  },
-  etherscan: {
-    apiKey: {
-      polygonMumbai: POLYGON_SCAN_KEY,
     },
   },
 };
